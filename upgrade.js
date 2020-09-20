@@ -130,12 +130,12 @@ class Item {
                 else game.nightmarePower = game.nightmarePower.tetr(2);
                 break;
             case 'shadow blood':
-                game.hp = game.nightmareFuel.arrow(game.nightmareLayer)(2);
-                game.dmg = game.nightmareFuel.arrow(game.nightmareLayer)(2);
-                game.lck = game.nightmareFuel.arrow(game.nightmareLayer)(2);
-                game.nightmarePower = game.nightmarePower.arrow(game.nightmareLayer)(2);
+                game.hp = game.nightmareFuel.tetr(2);
+                game.dmg = game.nightmareFuel.tetr(2);
+                game.lck = game.nightmareFuel.tetr(2);
+                game.nightmarePower = game.nightmarePower.tetr(2);
                 game.shadowBlood++;
-                this.cost = D(10).arrow(game.nightmareLayer)(game.shadowBlood + 2);
+                this.cost = D(10).tetr(game.shadowBlood + 2);
                 break;
         }
     }
