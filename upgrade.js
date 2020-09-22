@@ -45,13 +45,13 @@ class Item {
     update() {
         switch (this.name) {
             case 'potent dark health potion':
-                this.cost = D(10).tetr(game.potentPot[0]);
+                this.cost = D(10).tetr(2**game.potentPot[0]);
                 break;
             case 'potent dark strength potion':
-                this.cost = D(10).tetr(game.potentPot[1]);
+                this.cost = D(10).tetr(2**game.potentPot[1]);
                 break;
             case 'potent dark luck potion':
-                this.cost = D(10).tetr(game.potentPot[2]);
+                this.cost = D(10).tetr(2**game.potentPot[2]);
                 break;
             case 'shadow blood':
                 this.cost = D(10).tetr(D(2).pow(game.shadowBlood));
