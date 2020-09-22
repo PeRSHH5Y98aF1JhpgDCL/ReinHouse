@@ -54,7 +54,7 @@ class Item {
                 this.cost = D(10).tetr(game.potentPot[2]);
                 break;
             case 'shadow blood':
-                this.cost = D(10).tetr(game.shadowBlood + 2);
+                this.cost = D(10).tetr(D(2).pow(game.shadowBlood));
                 break;
         }
         this.updateText();
