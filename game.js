@@ -84,7 +84,7 @@ class Game {
 			$("deets").innerText = `
         You are currently in room ${f(game.room)} of floor ${f(game.floor)} ${game.dreamLayer.gt(0) ? `of dream layer ${f(game.dreamLayer)}` : ""} ${game.nightmareLayer.gt(0) ? `of nightmare layer ${f(game.nightmareLayer)}` : ""} which is a${beginsVowel(game.currentRoomType) ? "n" : ""} ${game.currentRoomType}
         You have ${f(game.gold)} gold ${game.nightmareFuel.gt(0) ? `and ${f(game.nightmareFuel)} nightmare fuel` : ""}
-        You have ${f(game.hp)} hp
+        You have ${f(game.hp)} hp, ${f(game.dmg)} strength, and ${f(game.lck)} luck 
         ${game.has.chocbread ? "You have Pain au Chocolat" : `${game.has.bread ? "You have bread" : ""}${game.has.chocolate ? ", chocolate" : ""}${game.has.fuser ? ", fuser" : ""}`}
         `;
 			for (let i of ITEMS) i.update();
