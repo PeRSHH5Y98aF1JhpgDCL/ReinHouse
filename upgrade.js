@@ -135,7 +135,7 @@ class Item {
                 game.lck = game.nightmareFuel.tetr(2);
                 game.nightmarePower = game.nightmarePower.tetr(2);
                 game.shadowBlood++;
-                this.cost = D(10).tetr(2**game.shadowBlood);
+                this.cost = D(10).tetr(D(2).pow(game.shadowBlood));
                 break;
         }
     }
