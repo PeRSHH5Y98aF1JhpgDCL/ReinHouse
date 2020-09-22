@@ -388,7 +388,7 @@ class Enemy {
 				? D(data.monsterStats[this.name].hp)
 						.pow(game.floor.add(1))
 						.pow(D(1).div(game.dreamLayer.add(1)))
-						.tetr(game.dreamLayer.mul(game.nightmareLayer).add(2))
+						.tetr((game.nightmareLayer).add(2))
 				: D(data.monsterStats[this.name].hp)
 						.pow(game.floor.add(1))
 						.pow(D(1).div(game.dreamLayer.add(1)));
@@ -396,7 +396,7 @@ class Enemy {
 				? D(data.monsterStats[this.name].dmg)
 						.pow(game.floor.add(1))
 						.pow(D(1).div(game.dreamLayer.add(1)))
-						.tetr(game.dreamLayer.mul(game.nightmareLayer).add(2))
+						.tetr((game.nightmareLayer).add(2))
 				: D(data.monsterStats[this.name].dmg)
 						.pow(game.floor.add(1))
 						.pow(D(1).div(game.dreamLayer.add(1)));
