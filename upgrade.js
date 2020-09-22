@@ -58,7 +58,7 @@ class Item {
                 break;
         }
         this.updateText();
-        if (game.gold.gt(this.maxFloor) || ((this.name.search(/potent/) > -1 || this.name.search(/nightmare/) > -1)&& game.nightmareLayer.lt(2)) || (this.name.search(/shadow\sblood/) > -1 && game.nightmareLayer.lt(3))) $(this.id).style.display = 'none';
+        if (game.gold.gt(this.maxFloor) || ((this.name.search(/potent/) > -1 || this.name.search(/nightmare/) > -1)&& game.nightmareLayer.lt(2)) || (this.name.search(/shadow\sblood/) > -1 && game.nightmareLayer.lt(1))) $(this.id).style.display = 'none';
         else $(this.id).style.display = 'inline-block';
         $(this.id).style.borderColor = game[this.nightmare ? 'nightmareFuel' : 'gold'].gte(this.cost) ? 'green' : 'red';
         $(this.id).style.backgroundColor = game[this.nightmare ? 'nightmareFuel' : 'gold'].gte(this.cost) ? 'lime' : 'pink';
